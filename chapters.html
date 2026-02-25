@@ -129,7 +129,18 @@
       <li><a href="chapters.html" class="active">Chapters</a></li>
       <li><a href="script.html">Pilot Script</a></li>
       <li><a href="design-sheets.html">Design Sheets</a></li>
-    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav class="nav-mobile-drawer" id="mobileDrawer">
+    <a href="index.html">Home</a>
+    <a href="characters.html">Characters</a>
+    <a href="world.html">World</a>
+    <a href="chapters.html">Chapters</a>
+    <a href="script.html">Pilot Script</a>
+    <a href="design-sheets.html">Design Sheets</a>
   </nav>
 
   <div class="page">
@@ -1634,5 +1645,22 @@
       <p>© 2025 Original IP — All rights reserved · Created for The Black Bulls Den</p>
     </footer>
   </div>
+  <script>
+    const btn = document.getElementById('hamburger');
+    const drawer = document.getElementById('mobileDrawer');
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('open');
+      drawer.classList.toggle('open');
+    });
+    // close on link click
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drawer.classList.remove('open');
+    }));
+    // mark active
+    drawer.querySelectorAll('a').forEach(a => {
+      if (a.href === location.href) a.classList.add('active');
+    });
+  </script>
 </body>
 </html>
