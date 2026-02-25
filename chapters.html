@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapters — NULL THRESHOLD</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .manga-page { max-width: 900px; margin: 0 auto; }
+    .chapter-title-block {
+      text-align: center;
+      padding: 80px 0 60px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 60px;
+    }
+    .chapter-title-block .ch-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      color: var(--echo-teal);
+      margin-bottom: 16px;
+    }
+    .chapter-title-block h1 {
+      font-family: var(--font-display);
+      font-size: 72px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .chapter-title-block .tagline {
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--dim);
+    }
+    .page-spread {
+      margin-bottom: 4px;
+    }
+    .page-num {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      color: var(--dim);
+      margin-bottom: 16px;
+    }
+    .panel-row {
+      display: grid;
+      gap: 4px;
+      margin-bottom: 4px;
+    }
+    .panel-row.two-col { grid-template-columns: 1fr 1fr; }
+    .panel-row.three-col { grid-template-columns: 1fr 1fr 1fr; }
+    .panel-row.sidebar { grid-template-columns: 2fr 1fr; }
+    .panel-row.sidebar-left { grid-template-columns: 1fr 2fr; }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 28px 32px;
+      min-height: 140px;
+      position: relative;
+    }
+    .panel.full { background: var(--panel); }
+    .panel-note {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: var(--dim);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      position: absolute;
+      top: 12px; right: 16px;
+    }
+    .caption {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--dim);
+      font-style: italic;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .panel .sfx { margin: 8px 0; }
+    .dialogue { margin: 8px 0; }
+    .dialogue .spk {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: var(--echo-teal);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .dialogue .spk.red { color: var(--blood); }
+    .dialogue .spk.amber { color: var(--amber); }
+    .dialogue .line {
+      font-size: 16px;
+      color: #fff;
+      line-height: 1.5;
+    }
+    .inner-mono {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--echo-teal);
+      line-height: 1.7;
+      padding: 10px 0;
+      border-top: 1px solid var(--echo-teal-dim);
+      border-bottom: 1px solid var(--echo-teal-dim);
+      margin: 12px 0;
+    }
+    .chapter-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="void-bg"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">NULL <span>THRESHOLD</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="world.html">World</a></li>
+      <li><a href="chapters.html" class="active">Chapters</a></li>
+      <li><a href="script.html">Pilot Script</a></li>
+      <li><a href="design-sheets.html">Design Sheets</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <section style="padding-top:100px;" id="ch01">
+      <div class="manga-page">
+
+        <div class="chapter-title-block fade-in">
+          <div class="ch-label">Volume 01 · Chapter 001</div>
+          <h1>Zero Point</h1>
+          <div class="tagline">"The world already decided you didn't matter. Survive anyway."</div>
+        </div>
+
+        <!-- PAGE 1 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 01 — FULL SPREAD</div>
+          <div class="panel full" style="min-height:400px; padding:48px;">
+            <div class="panel-note">ESTABLISHING · FULL BLEED</div>
+            <div class="caption">The sky above Ashfield District 7 is the same color it's been for ten years: deep violet, cracked with light the sun didn't make.</div>
+            <div class="caption">Void fractures. Seven of them visible from this rooftop. The smallest one you could walk through. The largest one has its own name on government maps — not a warning label, just a name. Like a mountain.</div>
+            <div class="caption">Like it belongs.</div>
+            <div class="inner-mono">
+              KAIRO (V.O.): The average Void Diver lasts six months before either the fracture or the paycheck kills them.<br>
+              KAIRO (V.O.): I've been doing this for three years.<br>
+              KAIRO (V.O.): I'm not brave. I'm just very good at math.
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 02</div>
+          <div class="panel-row sidebar">
+            <div class="panel">
+              <div class="panel-note">WIDE</div>
+              <div class="caption">Interior of Fracture V-7A. The walls breathe. Echo-light pulses in slow, bioluminescent waves — teal and deep violet, like something underwater and ancient. The floor is crusted with crystallized Echo residue: translucent shards worth three months of Ashfield wages per kilogram.</div>
+              <div class="caption">A figure moves through this with the practiced calm of someone who does their shopping in a place that would kill a normal person.</div>
+            </div>
+            <div class="panel">
+              <div class="panel-note">CLOSE — KAIRO</div>
+              <div class="caption">KAIRO VESS. 19 years old. Patched gear with no corporate insignia. A cracked visor he's fixed three times with the same strip of adhesive. He looks at the crystallized Echo like a contractor looking at load-bearing walls.</div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">(quiet, to himself) Okay. Southeast cluster is 30% denser than the intake report said. Collapse risk on the left column is... eleven minutes, maybe twelve.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 3 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 03</div>
+          <div class="panel-row three-col">
+            <div class="panel">
+              <div class="caption">A low, rhythmic pulse from the Void walls. Something moving in the deeper sections — an Echo-entity, medium class, territorial. Kairo doesn't look at it. He times his movements to its patrol cycle.</div>
+              <div class="inner-mono">KAIRO (V.O.): I can see approximately five seconds ahead. Not the future — probability. The difference matters. The future is certain. Probability gives you room to negotiate.</div>
+            </div>
+            <div class="panel">
+              <div class="caption">He chips a crystal loose with practiced, efficient motion. Checks the weight. Pockets it without celebration.</div>
+              <div class="panel-sfx sfx-teal" style="font-size:28px;">TINK</div>
+            </div>
+            <div class="panel">
+              <div class="caption">The entity passes six feet to his right. Massive. Covered in Echo-crystal growths like spines. Kairo is pressed flat against the fracture wall, completely still. He doesn't look scared. He looks like he's doing arithmetic.</div>
+              <div class="inner-mono">KAIRO (V.O.): It'll turn left at the third column. It always turns left at the third column. In seven seconds it'll be out of range. In eight seconds I'll have filled my bag.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 4 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 04</div>
+          <div class="panel-row sidebar-left">
+            <div class="panel">
+              <div class="panel-note">INSET — COMMS DEVICE</div>
+              <div class="caption">His comms unit crackles. A tinny voice — an Ashfield local, older, named MARDA. She runs the independent diver coordination network out of a collapsed transit hub.</div>
+              <div class="dialogue">
+                <div class="spk red">MARDA (COMMS)</div>
+                <div class="line">Kairo. You need to abort. I mean right now. The V-9C fracture just went critical.</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">I'm in 7A, Marda. That's two kilometers from 9C.</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk red">MARDA (COMMS)</div>
+                <div class="line">9C isn't pulling. Kairo — it's <em>pushing.</em></div>
+              </div>
+            </div>
+            <div class="panel full" style="min-height:260px;">
+              <div class="panel-note">FULL — KAIRO REACTION</div>
+              <div class="caption">A beat of silence. Kairo goes very still. Not because he's scared. Because he's already running through what this means, and none of the probability trees branch anywhere good.</div>
+              <div class="inner-mono">KAIRO (V.O.): An inverting Void fracture pushes Echo-contaminated entities outward instead of containing them. The last time one inverted, they evacuated four districts. It was a Void a fifth the size of 9C. Nobody evacuated the Ashfield last night. Nobody told anyone.</div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">How long has it been inverting?</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk red">MARDA (COMMS)</div>
+                <div class="line">Best estimate... six hours.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 5 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 05 — TRANSITION</div>
+          <div class="panel full" style="min-height:300px; padding:48px;">
+            <div class="panel-note">EXTERIOR — ASHFIELD 9C PERIMETER</div>
+            <div class="caption">The perimeter of Void fracture 9C. Corporate security tape — Meridian Corp colors, yellow and black — has been strung around a six-block radius. Automated warning drones circle overhead. Two corporate response vehicles are parked at the entry cordon, engines running.</div>
+            <div class="caption">The Ashfield residents who live in the six-block radius are standing outside their buildings, looking at the tape, looking at the drones, waiting for someone to tell them what to do. Nobody from Meridian is talking to them.</div>
+            <div class="inner-mono">KAIRO (V.O.): Meridian response protocol for an inverting Void in a Capped City: immediate mass evacuation, Resonant containment teams deployed within thirty minutes. Forty-seven casualties maximum in their best-case models. They're proud of forty-seven. Forty-seven is a low number when you're running the math on a city of three million. They ran that math. I've seen it. The Ashfield has sixty thousand people. The math doesn't include us because the math doesn't count us.</div>
+            <div class="caption">Kairo stands at the edge of the cordon tape. His bag is full. He could walk away. He has enough crystal to cover three months of living expenses for every person on his floor. He could walk away.</div>
+            <div class="panel-sfx sfx-teal" style="font-size:22px; margin-top:16px;">He doesn't walk away.</div>
+          </div>
+        </div>
+
+        <!-- PAGE 6 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 06</div>
+          <div class="panel-row two-col">
+            <div class="panel">
+              <div class="caption">Kairo crouches, studying the fracture entrance from the perimeter. Void 9C's opening is different — the light inside moves the wrong way, bleeding outward in pulses instead of pulling inward. Two corporate Resonants in full gear stand at the entry. Neither of them goes in.</div>
+              <div class="dialogue">
+                <div class="spk">CORPORATE RESONANT A</div>
+                <div class="line">Third team hasn't responded in forty minutes.</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk red">CORPORATE RESONANT B</div>
+                <div class="line">Flag it and hold. Command said we wait for the Apex asset.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="caption">The "Apex asset" arrives fourteen minutes later. Not in a vehicle. She lands.</div>
+              <div class="caption">SEYA CROSS drops from a height that should break both legs. She absorbs the impact through Kinetic amplification without slowing down, and the shockwave from her landing cracks the pavement in a three-foot radius.</div>
+              <div class="panel-sfx sfx-red">THOOM</div>
+              <div class="caption">She's 22. She looks tired. Not the tired of someone who ran here — the tired of someone who has been tired for a long time and gotten very good at functioning through it.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 7 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 07</div>
+          <div class="panel-row three-col">
+            <div class="panel">
+              <div class="caption">Seya takes in the scene with a single sweeping look. The inactive Resonants. The empty fracture entrance. The Ashfield residents behind the cordon watching her with complicated expressions — hope and resentment occupying the same faces.</div>
+              <div class="dialogue">
+                <div class="spk red">SEYA</div>
+                <div class="line">Three teams in. None out. What class were they?</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk">CORPORATE RESONANT A</div>
+                <div class="line">Beta-class Kinetics. Six-person standard response units.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="dialogue">
+                <div class="spk red">SEYA</div>
+                <div class="line">Eighteen Resonants. Gone in forty minutes. You've been standing here letting this fracture push entities into a residential district for six hours and your response was to send in three Beta teams and then stand at the line.</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk">CORPORATE RESONANT B</div>
+                <div class="line">Protocol dictates—</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk red">SEYA</div>
+                <div class="line">I don't care.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="caption">She starts toward the fracture entrance.</div>
+              <div class="dialogue">
+                <div class="spk">CORPORATE RESONANT A</div>
+                <div class="line">Cross — command said wait for full briefing. The asset protocol requires—</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk red">SEYA</div>
+                <div class="line">(not stopping) There are sixty thousand people in this district. Brief me while I walk.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 8 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 08 — KAIRO/SEYA INTERSECTION</div>
+          <div class="panel-row sidebar">
+            <div class="panel" style="min-height:240px;">
+              <div class="panel-note">WIDE</div>
+              <div class="caption">Seya moves through the fracture entrance. The inverted Echo light pushes back against her like a headwind — she leans into it, Kinetic amplification flaring around her hands and shoulders, burning through it.</div>
+              <div class="caption">She stops. Twenty feet inside the fracture, already past where the previous teams' comm signals went silent, she finds something she did not expect: a figure, sitting on a broken crystal formation, eating a protein bar, looking at the inverted Void walls like they're mildly inconvenient architecture.</div>
+            </div>
+            <div class="panel" style="min-height:240px;">
+              <div class="caption">Kairo looks up from his bar. He looks at her. He looks at the very visible Meridian Corp asset implants along her jaw and collarbone — the lifespan monitors.</div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">You're the Apex Catalyst. Seya Cross.</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk red">SEYA</div>
+                <div class="line">You're inside an inverting Void fracture eating a protein bar.</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">I'm a diver. This is technically my workplace.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 9 -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 09</div>
+          <div class="panel-row two-col">
+            <div class="panel">
+              <div class="dialogue">
+                <div class="spk red">SEYA</div>
+                <div class="line">You're null. Your class documentation is null. That means you have no Echo resistance, no augmentation, no regeneration. How are you not dead?</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">Good question. I've been thinking about that.</div>
+              </div>
+              <div class="caption">He stands. Tucks the protein bar away.</div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">I mapped the inversion pulse pattern for the first four hours before you arrived. There are eleven entities currently displaced from deeper in the fracture — I can tell you where each of them is and when each one will cross this corridor. The inversion is accelerating, which means you have a window of approximately ninety minutes before the fracture fully inverts and everything inside gets pushed back out at once.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="dialogue">
+                <div class="spk">KAIRO (CONT.)</div>
+                <div class="line">Good news: whatever triggered this is deeper inside, not at the surface. If you can reach it and neutralize it before the ninety minutes, the inversion stops. Fracture restabilizes.</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk red">SEYA</div>
+                <div class="line">You've been in here for— how long?</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">Since the inversion started. About six hours.</div>
+              </div>
+              <div class="caption">Seya stares at him. An apex-class Resonant with full Echo augmentation and she's being briefed by someone who tested null, who has been alone inside a critical inversion for six hours, eating a protein bar.</div>
+              <div class="dialogue">
+                <div class="spk red">SEYA</div>
+                <div class="line">...Why?</div>
+              </div>
+              <div class="dialogue">
+                <div class="spk">KAIRO</div>
+                <div class="line">Because nobody else was going to.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 10 — CHAPTER CLOSE -->
+        <div class="page-spread fade-in">
+          <div class="page-num">// PAGE 10 — CHAPTER END BEAT</div>
+          <div class="panel full" style="min-height:360px; padding:60px;">
+            <div class="panel-note">WIDE — DEEP VOID</div>
+            <div class="caption">Two panels. Same visual language, different context.</div>
+            <div class="caption" style="margin-top:24px;"><strong style="color:#fff;">PANEL A:</strong> Seya and Kairo moving deeper into the inverted fracture together. Her amplification flares against the headwind of Echo energy. He walks just behind her, slightly to the left — the precise spot where her wake creates the lowest-resistance path. He found this position in three steps. She hasn't noticed he found it. Yet.</div>
+            <div class="caption" style="margin-top:24px;"><strong style="color:#fff;">PANEL B:</strong> Deep inside the fracture, in a section so saturated with inverted Echo that the light moves like liquid — something crouches on the floor. Small. Still. A person, maybe. Hard to tell from this angle. Hard to tell if they're injured, or sleeping, or completely calm.</div>
+            <div class="inner-mono" style="margin-top:32px;">
+              KAIRO (V.O.): I've been in a lot of Voids. I have mapped the probability trees of a thousand different environments, a thousand different entities. I have never, not once in three years, encountered a reading I couldn't parse.<br><br>
+              KAIRO (V.O.): There is something at the bottom of this fracture.<br><br>
+              KAIRO (V.O.): I don't know what it's going to do. I can't see it at all.<br><br>
+              KAIRO (V.O.): That should scare me more than it does.
+            </div>
+            <div style="text-align:center; margin-top:48px;">
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:800; text-transform:uppercase; color:var(--echo-teal); letter-spacing:0.1em;">END OF CHAPTER 001</div>
+              <div style="font-family:var(--font-mono); font-size:11px; color:var(--dim); margin-top:8px; letter-spacing:0.2em;">NEXT: CHAPTER 002 — OVERCLOCK</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAPTER NAV -->
+        <div class="chapter-nav">
+          <span class="btn btn-ghost" style="opacity:0.3; cursor:default;">← Previous Chapter</span>
+          <span style="font-family:var(--font-mono); font-size:10px; color:var(--dim); letter-spacing:0.2em;">CHAPTER 001 / 004</span>
+          <a href="chapters.html" class="btn btn-ghost" style="opacity:0.5; cursor:default;">Chapter 002 Coming Soon →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+    <footer>
+      <div class="foot-brand">Null <span style="color:var(--echo-teal)">Threshold</span></div>
+      <p>© 2025 Original IP — All rights reserved</p>
+    </footer>
+  </div>
+</body>
+</html>
